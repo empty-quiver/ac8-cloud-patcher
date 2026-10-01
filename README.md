@@ -1,5 +1,7 @@
 # AC8 cloud sentinel patcher
 
+While playing ACE COMBAT 8 under Proton, I noticed that clouds did not appear below the horizon line. They were visible against the sky, but disappeared against the terrain, leaving the ground visible where clouds should have obscured it. This patcher applies the workaround that restored those missing clouds on my setup.
+
 Using NVIDIA Nsight, with help from GPT-6-Astra in Codex, I traced this to a cloud ray-march stall in `SkyTraceCS` and have a targeted workaround. I've put the patcher here so someone else can apply the same workaround to shaders dumped on their own system.
 
 <img width="2560" height="850" alt="Cloud rendering comparison before and after the sentinel workaround" src="https://github.com/user-attachments/assets/0b7cfc90-4916-43b9-a89d-136ba30cba61" />
