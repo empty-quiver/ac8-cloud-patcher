@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Keep game shaders, captures, and generated replacements out of Git.
+*.spv
+*.dxil
+*.hlsl
+*.bc
+*.rdc
+*.ngfx-capture
+dump/
+patched/
